@@ -7,21 +7,21 @@ if [ $# -ne 0 ]; then
     #引数のオプションの処理
     if [ $1 = "-b" ]; then
         # bourbon
-        cat ./bourbon.txt
+        cat ./data/bourbon.txt
 
     elif [ $1 = "-e" ]; then
         # waddle dee
-        cat ./waddle_dee.txt
+        cat ./data/waddle_dee.txt
 
     elif [ $1 = "-o" ]; then
         # waddle doo
-        cat ./waddle_doo.txt
+        cat ./data/waddle_doo.txt
 
     elif [ $1 = "-w" ]; then
-        cat ./kirby_w.txt
+        cat ./data/kirby_w.txt
 
     elif [ $1 = "-g" ]; then
-        cat ./gordo.txt
+        cat ./data/gordo.txt
 
     else
         # help の表示
@@ -38,5 +38,5 @@ if [ $# -ne 0 ]; then
 
 else
     # 引数がないときはカービィを表示する
-    cat ./kirby.txt
+    cat ./data/kirby.txt
 fi
